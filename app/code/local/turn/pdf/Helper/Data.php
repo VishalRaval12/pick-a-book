@@ -1,0 +1,4 @@
+<?php
+class __Helper_Data extends Mage_Core_Helper_Abstract
+{
+}

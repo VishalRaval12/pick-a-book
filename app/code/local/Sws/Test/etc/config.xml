@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sws_Test>
+            <version>0.1.0</version>
+        </Sws_Test>
+    </modules>
+
+	<global>
+<models>
+    <test>
+        <class>Sws_Test_Model</class>
+        <resourceModel>sws_test_resource</resourceModel>
+    </test>
+    <sws_test_resource>
+      <class>Sws_Test_Model_Resource</class>
+         <entities>
+           <test>
+               <table>sws_test</table>
+           </test>
+         </entities>
+    </sws_test_resource>
+</models>
+
+<resources>
+    <test_setup>
+        <setup>
+            <module>Sws_Test</module>
+        </setup>
+		<connection>
+            <use>core_setup</use>
+        </connection>
+    </test_setup>
+	<test_write>
+        <connection>
+            <use>core_write</use>
+        </connection>
+    </test_write>
+    <test_read>
+        <connection>
+            <use>core_read</use>
+        </connection>
+    </test_read>
+</resources>   
+
+	 <blocks>
+        <test>
+            <class>Sws_Test_Block</class>
+        </test>
+     </blocks>
+	 
+		<helpers>
+            <test>
+                <class>Sws_Test_Helper</class>
+            </test>
+        </helpers>
+</global>
+	 
+   <frontend>
+        <routers>
+            <test>
+                <use>standard</use>
+                <args>
+                    <module>Sws_Test</module>
+                    <frontName>test</frontName>
+                </args>
+            </test>
+        </routers>
+		<layout>
+            <updates>
+                <test>
+                      <file>test.xml</file>
+                </test>
+            </updates>
+            </layout>
+    </frontend>    
+</config>

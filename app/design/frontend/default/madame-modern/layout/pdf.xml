@@ -1,0 +1,8 @@
+<?xml version=“1.0”?>
+<layout version=“0.1.0”>
+<pdf_index_index>
+<reference name=“content”>
+<block type=“core/template” name=“pdf” template=“pdf/pdf.phtml” />
+</reference>
+</pdf_index_index>
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+      <turn_pdf>
+          <active>true</active>
+          <codePool>local</codePool>
+      </turn_pdf>
+  </modules>
+</config>
